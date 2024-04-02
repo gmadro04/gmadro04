@@ -1,0 +1,113 @@
+body {
+    color: #333;
+    background: #1e1f24;
+    text-align: center;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  */
+    font-family:'Courier New', sans-serif;
+    font-size: 17px;
+    margin: 0;
+    padding: 0;
+    border-radius: 0.5rem
+}
+
+
+#cabecera {
+    background-color: #054068;;
+    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.5);
+    color: white;
+    font-weight: bold;
+    margin: 0;
+    padding: 0.8rem;
+}
+
+#cabecera #name {
+    font-size: 2rem;
+    text-align: center; 
+}
+
+#cabecera #logo {
+    width: 90px;
+    vertical-align: baseline;
+}
+
+
+#cabecera #tagline {
+    /* padding: 0 0 0 1rem; */
+    font-weight: normal;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#container {
+    width: 70%;
+    padding: 1rem;
+    text-align: left;
+    /* border: 1px solid #ddd; */
+    margin: 0 auto;
+}
+
+#cabecera1 {
+    background-color: whitesmoke;
+    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.5);
+    color: white;
+    font-weight: bold;
+    margin: 0;
+    padding: 5rem;
+    text-align: center;
+}
+
+#cabecera1 #gabo {
+    width: 900px;
+    vertical-align: center;
+    border-radius: 0.5rem;
+}
+#cabecera1 #gabo1 {
+    width: 700px;
+    vertical-align:baseline;
+    border-radius: 0.8rem;
+}
+
+#container h1 {
+    font-size: 25px;
+}
+
+#post {
+    padding: 1rem;
+    background: white;
+    text-align: justify;
+    font-weight: lighter;
+    align-items: center;
+}
+
+#post #tesis{
+    width: 1000px;
+    vertical-align:center;
+    border-radius: 0.8rem;
+    margin: 0 auto;
+}
+
+#footer {
+    background: #777;
+    color: white;
+    text-align:center;
+    padding: 0.5rem;
+}
+#footer #github img {
+    width: 50px;
+    height: 50px;
+    align-items: left;
+    border-radius: 100rem;
+}
+#footer #link img {
+    width: 50px;
+    height: 50px;
+    align-items: left;
+    border-radius: 100rem;
+}
+
+#footer #x img {
+    width: 50px;
+    height: 50px;
+    align-items: left;
+    border-radius: 100rem;
+}

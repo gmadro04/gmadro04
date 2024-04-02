@@ -1,0 +1,93 @@
+body {
+    color: #065081;
+    background: #1e1f24;
+    text-align: center;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  */
+    font-family: 'Courier New', sans-serif;
+    font-size: 17px;
+    margin: 0;
+    padding: 0;
+    border-radius: 0.5rem
+}
+
+#container {
+    width: 85%;
+    padding: 1rem;
+    text-align: center;
+    /* border: 1px solid #ddd; */
+    margin: 0 auto;
+}
+#cabecera {
+    background-color: #ffffff;
+    /*background: linear-gradient(to bottom, #d4e5ff 0%, #ffffff 50%, #ffffff 50%, #d4e5ff 100%);*/
+    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.5);
+    border-bottom: 1px dashed #8e989e;
+    color: #021b2c;
+    font-weight: bold;
+    margin: 0;
+    padding: 0.8rem;
+}
+#scenarios {
+    background-color: #ffffff;
+    /*box-shadow: 0px 2px 20px 0px #004b7c;*/
+    border-bottom: 1px dashed #8e989e;
+    color: #021b2c;
+    font-weight: bold;
+    margin: 0;
+    padding: 3rem;
+    text-align: justify;
+}
+#collective {
+    background-color: #ffffff;
+    /*box-shadow: 0px 2px 20px 0px #004b7c;*/
+    border-bottom: 1px dashed #8e989e;
+    color: #021b2c;
+    font-weight: bold;
+    margin: 0;
+    padding: 3rem;
+    text-align: justify;
+}
+#results {
+    background-color: #ffffff;
+    border-bottom: 1px dashed #8e989e;
+    color: #021b2c;
+    font-weight: bold;
+    margin: 0;
+    padding: 3rem;
+    text-align: justify;
+}
+/* IMAGEN DIAGRAMA DE TESIS */
+#cabecera #tesis {
+    width: 1000px;
+    vertical-align: center;
+    border-radius: 1rem;
+}
+/* IMÁGENES SCENARIOS SIMULACIÓN */
+
+.imagenes-escenario {
+    display: flex;
+    /*align-items: center;
+    /*justify-content: space-between;*/
+    margin: 0 auto;
+    width: 800px;
+    height: 430px;
+}
+
+.imagenes-escenario img {
+    /*max-width: 33%;*/
+    /*margin: 0 1px;*/
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.8;
+    border-radius: 4rem;
+    /*transition: transform 0.5s ease-in-out;*/
+    transition: 0.5s ease
+}
+.imagenes-escenario img:hover {
+    cursor: crosshair;
+    width: 400px;
+    opacity: 1;
+    filter: contrast(120%);
+    /*transform: scale(1.1);*/
+}

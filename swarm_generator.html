@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Swarm Generator</title>
+        <link rel="stylesheet" href="css/swarm.css">
+    </head>
+<body>
+    <div id="container">
+        <div id="cabecera">
+            <h1>SWARM GENERATOR</h1>
+            <P>Swarm Generator is a experimental mision generator to swarm robotics for 
+                analyzing and study swarm robot proprieties.
+                <br>
+            </P>
+            <img id="tesis" src="images/tesis_diagram.png" alt="">
+            <br>
+            <p>Here you can find more information about the supplementary material of 
+                bachelor tesis
+            </p>
+            <li>
+                <a href="#scenarios">Scenarios of Swarm Generator</a>
+            </li>
+            <li><a href="#collective">Collective behaviors and
+                Misions (Demonstrative videos)</a>
+            </li>
+            <li>
+                <a href="#results">Results of Experiments</a>
+            </li>
+        </div>
+        <div id="scenarios">
+            <h1>Scenarios of swarm generator</h1>
+            <br>
+            Swarm Generator is be able to generate five types of scenarios in three different sizes (small, medium, big).
+            <br>
+            <h2><li>Triangle<br></li></h2>
+            <div class="imagenes-escenario"> <!--Images scenario triangle-->
+                <img src="recortes_escenarios/T_p.png" alt="Small triangle">
+                <img src="recortes_escenarios/T_m.png" alt="Medium triangle">
+                <img src="recortes_escenarios/T_g.png" alt="Big triangle">
+            </div>
+            <br>
+            <h2><li>Square</li><br></h2>
+            <div class="imagenes-escenario"> <!--Images square scenario-->
+                <img src="recortes_escenarios/C_p.png" alt="Small square">
+                <img src="recortes_escenarios/C_m.png" alt="Medium square">
+                <img src="recortes_escenarios/C_g.png" alt="Big square">
+            </div>
+            <br>
+            <h2><li>Hexagon</li><br></h2>
+            <div class="imagenes-escenario"> <!--Images hexagon scenario-->
+                <img src="recortes_escenarios/H_p.png" alt="Small hexagon">
+                <img src="recortes_escenarios/H_m.png" alt="Medium hexagon">
+                <img src="recortes_escenarios/H_g.png" alt="Big hexagon">
+            </div>
+            <br>
+            <h2><li>Octagon</li><br></h2>
+            <div class="imagenes-escenario"> <!--Images octagon scenario-->
+                <img src="recortes_escenarios/O_p.png" alt="Small octagon">
+                <img src="recortes_escenarios/O_m.png" alt="Medium octagon">
+                <img src="recortes_escenarios/O_g.png" alt="Big octagon">
+            </div>
+            <br>
+            <h2><li>Dodecagon</li><br></h2>
+            <div class="imagenes-escenario"> <!--Images square dodecagon-->
+                <img src="recortes_escenarios/D_p.png" alt="Small Dodecagon">
+                <img src="recortes_escenarios/D_m.png" alt="Medium Dodecagon">
+                <img src="recortes_escenarios/D_g.png" alt="Big Dodecagon">
+            </div>
+        </div>
+        <div id="collective">
+            <h1>Collective Behaviors and Misions</h1>
+            <p>
+                In most swarm algorithms, individuals perform according to local rules and the overall behavior emerges organically from
+                the interplay of the individuals of the swarm. Translated to the swarm robotics domain, individual robots exhibit a
+                behavior that is based on a local rule set which can range from a simple reactive mapping between sensor inputs and
+                actuator outputs to elaborate local algorithms. Typically, these local behaviors incorporate interactions with the
+                physical world, including the environment and other robots. Each interaction consists of
+                reading and interpreting the sensory data, processing this data, and driving the actuators accordingly. Such a sequence
+                of interactions is defined as basic behavior that is repeatedly executed, either indefinitely or until a desired state
+                is reached. These collective behaviors are basic behaviors of a swarm that could be combined to tackle
+                complex real-world applications as, for example, foraging or construction.
+                <br>
+                SWARM GENERATOR can contemplate 4 types of missions:
+                Exploration, Aggregation, pattern formation and collective
+                decision making
+            </p>
+            <h2>Exploration</h2>
+            <p>
+                Random walk can be defined as the behavior in which a robot moves without aiming a particular trajectory. In most random
+                walk methods, changes in the direction of movement of the robots occur when they interact with other robots or objects
+                in the environment. The selection of a direction of movement can follow deterministic or stochastic rules. In many
+                cases, robots also embed obstacle avoidance behaviors to safely navigate in the environment.
+                <li>Objetive</li>
+                The robots must explore and cover as much space as possible. The floor is completely gray. At the beginning of the
+                experiment, the N robots are randomly placed in the workspace.
+            </p>
+            <h2>Aggregation</h2>
+            <p>
+                Aggregation is a group behavior in which the individuals approach to each other and form clusters. In nature, for
+                example, bees aggregate in the hive and school of fish remain together in single clusters. In swarm robotics,
+                aggregation behaviors are widely study as they determine the ability of the robots to remain together as a group. Robots
+                can aggregate either because they perceive a region of interest to aggregate in the environment—like the bees aggregate
+                in the hive, or because they sense other robots that are already forming a cluster—like the school of fish.
+                <br>
+                <li>Objetive</li>
+                Robots must be added as quickly as possible in a black spot located in the workspace. The floor is completely gray
+                except for a circular black area randomly located in the simulation arena. This allows individuals of the swarm to get spatially close to each other for further interaction.
+            </p>
+            <h2>Pattern formation </h2>
+            <p>
+                A pattern is an arrangement of objects displaying mathematical, geometric or statistic relationships (e.g., atoms
+                organized in molecules, and molecules that in a big scale can form crystals). In swarm robotics, robots can form
+                patterns by strategically positioning themselves in regard to the position of other robots they perceive. By following
+                simple positioning rules at the individual level, a robot swarm can distributed itself in the form of organized
+                structures.
+                
+                Robot pattern formation is useful to perform tasks such as uniformly covering a region of interest, establishing
+                specific lattice or network topologies, and performing collective motion (known as flocking in the context of swarm
+                robotics).
+                <br>
+                <li>Objetive</li>
+                In this mission, the robot swarm must uniformly cover a target region in the arena. The target region is either an area
+                in the simulation arena or the arena itself. At the beginning of each experiment, the robots are placed randomly.
+            </p>
+            <h2>Collective decision making</h2>
+            <p>
+                These behaviors allow the robots in a swarm to take a common choice on a given issue.
+                Collective decision-making deals with how robots influence each other when making choices. The desired outcome of
+                consensus achievement is that all the robots of the swarm eventually converge towards a single decision among the
+                possible alternatives.
+            </p>
+            <br>
+            <li>Objetive</li>
+            In this mission, the robot swarm must interact with other robots to reach a consensus to glow in a single color between
+            red, green and blue.
+        </div>
+        <div id="results">
+            <h1>Experimental results</h1>
+            <br>
+            <p>
+                Here you can see a brief report of the result of experiments. Remember that all data set is available into the project folder of the repository.
+                Feel free that downland all material for develop your own experiments all source and code is available.
+            </p>
+            <br>
+            Pick up which report you can see.
+            <br>
+            <ol type="1">
+                <!-- If you are workin on windows change the shape of path to avoid error 
+                C:your address path
+                If you environment of work is Linux the address path is
+                /home/gmadro/swarm_robotics/SWARM_GENERATOR/Reporte-Resultados
+                -->
+                <li> <a href="/home/gmadro/swarm_robotics/SWARM_GENERATOR/Reporte-Resultados/reporte_mision1.html" > Exploration</a></li>
+                <li> <a href="/home/gmadro/swarm_robotics/SWARM_GENERATOR/Reporte-Resultados/reporte_mision2.html" > Aggregation</a></li>
+                <li> <a href="/home/gmadro/swarm_robotics/SWARM_GENERATOR/Reporte-Resultados/reporte_mision3.html" > Pattern formation</a></li>
+                <li> <a href="/home/gmadro/swarm_robotics/SWARM_GENERATOR/Reporte-Resultados/reporte_mision4.html" > Collective decision-making</a></li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>
