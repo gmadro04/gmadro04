@@ -26,7 +26,7 @@ body {
 }
 
 #cabecera #logo {
-    width: 90px;
+    width: 10%;
     vertical-align: baseline;
 }
 
@@ -56,19 +56,14 @@ body {
     text-align: center;
 }
 
-#cabecera1 #gabo {
-    width: 900px;
-    vertical-align: center;
-    border-radius: 0.5rem;
-}
 #cabecera1 #gabo1 {
-    width: 700px;
+    width: 70%;
     vertical-align:baseline;
     border-radius: 0.8rem;
 }
 
 #container h1 {
-    font-size: 25px;
+    font-size: 1.5rem;
 }
 
 #post {
@@ -80,9 +75,8 @@ body {
 }
 
 #post #tesis{
-    width: 1000px;
-    vertical-align:center;
-    border-radius: 0.8rem;
+    width: 80%; /* Responsive width */
+    border-radius: 0.5rem;
     margin: 0 auto;
 }
 
@@ -93,21 +87,31 @@ body {
     padding: 0.5rem;
 }
 #footer #github img {
-    width: 50px;
-    height: 50px;
+    width: 5%;
+    height: 5%;
     align-items: left;
     border-radius: 100rem;
 }
 #footer #link img {
-    width: 50px;
-    height: 50px;
+    width: 5%;
+    height: 5%;
     align-items: left;
     border-radius: 100rem;
 }
 
 #footer #x img {
-    width: 50px;
-    height: 50px;
+    width: 5%;
+    height: 5%;
     align-items: left;
     border-radius: 100rem;
 }
+
+/* Media Queries (Example for small screens) */
+@media only screen and (max-width: 768px) {
+    #container {
+      width: 100%; /* 100% width on small screens */
+    }
+    #cabecera1 {
+      padding: 2rem; /* Less padding on smaller screens */
+    }
+  }

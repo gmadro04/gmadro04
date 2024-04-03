@@ -58,7 +58,7 @@ body {
 }
 /* IMAGEN DIAGRAMA DE TESIS */
 #cabecera #tesis {
-    width: 1000px;
+    width: 80%;
     vertical-align: center;
     border-radius: 1rem;
 }
@@ -69,8 +69,8 @@ body {
     /*align-items: center;
     /*justify-content: space-between;*/
     margin: 0 auto;
-    width: 800px;
-    height: 430px;
+    width: 70rem;
+    height: 33rem;
 }
 
 .imagenes-escenario img {
@@ -86,7 +86,7 @@ body {
 }
 .imagenes-escenario img:hover {
     cursor: crosshair;
-    width: 400px;
+    width: 20rem;
     opacity: 1;
     filter: contrast(120%);
     /*transform: scale(1.1);*/
