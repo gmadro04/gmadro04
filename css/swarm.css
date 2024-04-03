@@ -69,7 +69,7 @@ body {
     /*align-items: center;
     /*justify-content: space-between;*/
     margin: 0 auto;
-    width: 60%;
+    width: 50%;
     height: 100%;
 }
 
@@ -80,7 +80,7 @@ body {
     flex-grow: 1;
     object-fit: cover;
     opacity: 0.8;
-    border-radius: 4rem;
+    border-radius: 2rem;
     /*transition: transform 0.5s ease-in-out;*/
     transition: 0.5s ease
 }
