@@ -138,4 +138,24 @@ header nav ul li a:hover {
     font-size: 0.9rem;
     color: #cfcfcf;
 }
+#footer a {
+    text-decoration: none; /* Quita el subrayado por defecto */
+    color: #cfcfcf; /* Color por defecto del texto */
+}
 
+#footer a:hover {
+    text-decoration: underline; /* Subrayado al pasar el cursor */
+}
+
+#footer a:active {
+    color: #cfcfcf; /* Mantener el color del texto al hacer clic */
+}
+
+
+/* ESTILO DE LOS VIDEOS */
+.video-container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    margin-top: 3%; /* Ajusta según sea necesario */
+}
