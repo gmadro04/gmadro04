@@ -4,46 +4,69 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>ARES</title>
-        <link rel="stylesheet" href="css/swarm.css">
+        <title>Robot Swarm</title>
+        <link rel="stylesheet" href="css/paper.css">
     </head>
 <body>
     <div id="container">
         <header>
             <nav>
                 <ul>
-                    <li><a href="https://gmadro04.github.io/gmadro04/">Home</a></li>
+                    <!--li><a href="https://gmadro04.github.io/gmadro04/">Home</a></li-->
                     <!--li><a href="#projects">Projects</a></li-->
-                    <li><a href="https://github.com/GMadro04">Repositories</a></li>
+                    <li><a href="https://github.com/gmadro04/ARES">Repository</a></li>
                     <!--li><a href="#post">About</a></li-->
                 </ul>
             </nav>
         </header>
         <div id="cabecera">
-            <h1>ARES</h1>
-            <P>Ares (Automating Robotics Experiments in Swarms) is a experimental environment to swarms robotics. 
-                ARES provides an experimental set up, a repository of collective behaviors 
-                (software control) and a protocol to study swarms robots and their properties.<br>
+            <h1 align="center">Automating the evaluation of the scalability,
+                flexibility, and robustness of collective behaviors
+                for robot swarms</h1>
+            <P>
+                We have created an experimental environment designed for robot swarms, integrating a repository of collective behaviors, 
+                a mission generator, and an experimental protocol to study robot swarms and their properties in various simulated scenarios.
+                It facilitates the execution, analysis, and generalization of results, promoting
+                standardization and reproducibility in swarm robotics research.
+                The environment consists of the following key stages, shown in the next figure.
+                <br>
             </P>
-            <img id="tesis" src="images/tesis_diagram.png" alt="">
-            <br>
-            <p>Here you can find more information about the supplementary material of 
-                bachelor tesis
+            <p align="center">  
+                <img id="tesis" src="images/tesis_diagram1.png"> 
+                <img id="modeloRM" src="images/footBot-modelRM.png" alt="">
             </p>
+
+            <br>
             <li>
-                <a href="#scenarios">Scenarios of Ares</a>
+                <b>Collective Behaviors (Software Control)</b>: Utilizes a repository containing different instances of control software for the Foot-Bot robot, 
+                a crawler robot specifically designed for swarm robot experiments, equipped with sensors and actuators to interact with other robots and the environment.
+            </li> 
+            <li>
+                <b>Simulation and Mission Generator</b>: Uses a random mission generator to produce missions and conduct experiments in various simulated scenarios.
             </li>
-            <li><a href="#collective">Collective behaviors and
+            <li>
+                <b>Evaluation</b>: Assesses the performance of the missions and the properties of the swarm using performance metrics in mission completion and responsiveness to changes.
+            </li>
+            <li>
+                <b>Automated Results Reporting</b>: Automatically generates detailed documentation and reports of the experiments conducted, facilitating the analysis and interpretation of the results.
+            </li>
+            <br>
+            <p align="center">Here you can find more information about the experimental environment.</p>
+            <li align="center">
+                <a href="#scenarios">Scenarios </a>
+            </li>
+            <li align="center">
+                <a href="#collective">Collective behaviors and
                 Missions (Demonstrative videos)</a>
             </li>
-            <li>
-                <a href="#results">Results of Experiments</a>
+            <li align="center">
+                <a href="#results">Experiments</a>
             </li>
         </div>
         <div id="scenarios">
-            <h1>Scenarios of Ares</h1>
+            <h1>Scenarios </h1>
             <br>
-            Ares is be able to generate five types of scenarios in three different sizes (small, medium, big).
+            The environment is be able to generate five types of scenarios in three different sizes (small, medium, big).
             <br>
             <h2><li>Triangle<br></li></h2>
             <div class="imagenes-escenario"> <!--Images scenario triangle-->
@@ -93,7 +116,7 @@
                 is reached. These collective behaviors are basic behaviors of a swarm that could be combined to tackle
                 complex real-world applications as, for example, foraging or construction.
                 <br>
-                ARES can contemplate 4 types of missions:
+                The environment can contemplate 4 types of missions:
                 Exploration, Aggregation, pattern formation and collective
                 decision making
             </p>
@@ -173,10 +196,25 @@
             </div>
         </div>
         <div id="results">
-            <h1>Experimental results</h1>
+            <h1>Experiments</h1>
+            <p>
+                The experimental environment automatically evaluates control software instances through the possible configurations of the mission generator.
+                First, experimental parameters are defined: mission type, arena size and shape, number of robots, and control software. 
+                Then, the experimental environment configures and generates the experiment automatically according to the established parameters. 
+                During the simulation, data generated by the simulator is recorded until all considered configurations are completed.
+                <br>
+                In the experiments, the experimental environment was used to automatically evaluate the performance and properties of the swarm across all planned missions, varying the available parameters in the mission generator.
+                For each mission, two control instances (A and B) were evaluated, and each control instance was assessed 10 times for each problem to obtain statistical information. 
+                Two types of experiments were conducted: one under normal conditions (without faults) and another with different percentages of faults in the robot swarm (10\%, 20\%, 30\%).
+                Faults are induced by forcing a certain percentage of robots to stop completely and not operate. 
+                Each evaluation was performed for five different arena sizes, and in each case, the number of robots was set according to the defined parameters.
+                After conducting the experiments, metrics are automatically obtained to evaluate both mission performance and swarm properties. 
+                These results are crucial for understanding how robot swarms behave in different scenarios and how their capabilities can be improved.
+            </p>
             <br>
             <p>
-                Here you can see a brief report of the result of experiments. Remember that all data set is available into the project folder of the repository.
+                Here you can see a brief report of the result of experiments (the report is in Spanish and it is generate by the experimental environment). 
+                Remember that all data set is available into the project folder of the repository.
                 Feel free that downland all material for develop your own experiments all source and code is available.
             </p>
             <br>
@@ -186,7 +224,7 @@
                 <!-- If you are working on windows change the shape of path to avoid error 
                 C:your address path
                 If you environment of work is Linux the address path is
-                /home/gmadro/swarm_robotics/SWARM_GENERATOR/Reporte-Resultados
+                /home/your_pc/swarm_robotics/ARES/Reporte-Resultados
                 -->
                 <li> <a href="Reporte-Resultados/reporte_mision1.html" > Exploration</a></li>
                 <li> <a href="Reporte-Resultados/reporte_mision2.html" > Aggregation</a></li>
@@ -204,14 +242,21 @@
         <br>
         <footer id="footer">
             <p>The development of this project is supported by IRIDIA at <a href="https://www.ulb.be/en">Université Libre de Bruxelles</a>, 
-                and Departamento de Ingeniería Electrónica at <a href="https://www.udenar.edu.co/">Universidad de Nariño</a>.</p>
+                and Departamento de Ingeniería Electrónica at <a href="https://www.udenar.edu.co/">Universidad de Nariño</a>.
+            </p>
+            <p>
+                Software and experiments were developed by GMMP.
+                The project received funding from Convocatoria Docente 2022--Universidad de Nariño (project No. 2703). 
+                DGR acknowledges support from the European Innovation Council~(EIC) under the European Union’s Horizon Europe research and innovation programme 
+                (EMERGE:grant No. 101070918). UK participants in the EMERGE project are supported by UKRI (grant No. 10038942).
+            </p>
                 Authors. <br>
             <address>
                 Gabriel Mauricio Madroñero Pachajoa<br>
                 David Garzón Ramos <br>
                 Wilson O. Achicanoy Martinez 
             </address>
-            <p>Last update June 4 2024</p>
+            <!--p>Last update June 4 2024</p-->
             <!--img src="logo/elec.png" alt=""-->
             <!--img src="logo/iridia.png" alt=""-->
             <!--img src="logo/udenar.png" alt=""-->
